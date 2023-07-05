@@ -10,7 +10,7 @@ app = Flask(__name__)
 #CORS(app)
 CORS(app, resources={r"/*": {"origins": "*"}})
 
-openai.api_key = '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'  # replace 'your-openai-key' with your actual OpenAI key
+openai.api_key = ''  # replace 'your-openai-key' with your actual OpenAI key
 
 @app.route('/')
 def home():
@@ -62,7 +62,7 @@ import PyPDF2
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
 
-openai.api_key = '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' 
+openai.api_key = '' 
 
 # Define company info
 company_info = {
@@ -125,7 +125,7 @@ from PyPDF2 import PdfReader
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
 
-openai.api_key = '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'
+openai.api_key = ''
 
 # Define company info
 company_info = [
